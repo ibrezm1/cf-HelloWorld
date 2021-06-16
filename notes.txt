@@ -23,3 +23,4 @@ https://docs.docker.com/language/python/build-images/
    33  cf push
    35  cf delete -r cf-HelloWorld
 
+Set up credentials file and https://concoursetutorial.com/basics/parameters/ modify build.sh to include it 
