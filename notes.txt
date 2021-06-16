@@ -1,0 +1,25 @@
+https://www.katacoda.com/courses/docker/playground
+Dockerfile
+FROM python:stretch
+ENTRYPOINT ["bash"]
+
+
+    2  mkdir build-output
+    3  mkdir build-output/vendor
+    4  vi requirements.txt
+    5  nano requirements.txt
+    6  echo "Flask" > requirements.txt
+    7  pip download -d build-output/vendor -r source-code/requirements.txt --no-binary :all:
+    8  pip download -d build-output/vendor -r requirements.txt --no-binary :all:
+
+https://docs.docker.com/language/python/build-images/
+
+   36  fly -t main sp -c pipeline.yml -p hello-world
+   37  fly -t main unpause-pipeline -p hello-world
+   38  fly -t tutorial unpause-job --job hello-world/test
+   39  fly -t tutorial unpause-job --job hello-world/build
+
+
+   33  cf push
+   35  cf delete -r cf-HelloWorld
+
