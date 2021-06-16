@@ -3,7 +3,7 @@ resources:
 - name: source-code
   type: git
   source:
-    uri: https://github.com/vchrisb/cf-HelloWorld.git
+    uri: https://github.com/ibrezm1/cf-HelloWorld.git
     branch: master
 
 - name: cf
